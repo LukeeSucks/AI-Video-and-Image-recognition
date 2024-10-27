@@ -1,0 +1,836 @@
+{
+  "detection_settings": {
+    "confidence_threshold": 0.5,
+    "nms_threshold": 0.4,
+    "classes_to_detect": []
+  },
+  "visualization_settings": {
+    "use_random_colors": false,
+    "use_custom_colors": true,
+    "default_visualization": {
+      "detection_percentage": 100,
+      "bounding_box_color": "#00FFFF",
+      "bounding_box_thickness": 2,
+      "label_font_scale": 0.5,
+      "label_font_thickness": 1,
+      "label_background_color": "#00FFFF",
+      "label_text_color": "#000000",
+      "connecting_line_color": "#00FFFF",
+      "connecting_line_thickness": 1
+    },
+    "classes_customization": {
+      "person": {
+        "detection_percentage": 100,
+        "bounding_box_color": "#FF0000",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.6,
+        "label_font_thickness": 2,
+        "label_background_color": "#FF0000",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#FF0000",
+        "connecting_line_thickness": 2
+      },
+      "bicycle": {
+        "bounding_box_color": "#FF7F00",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF7F00",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#FF7F00",
+        "connecting_line_thickness": 1
+      },
+      "car": {
+        "detection_percentage": 100,
+        "bounding_box_color": "#FFFF00",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FFFF00",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#FFFF00",
+        "connecting_line_thickness": 1
+      },
+      "motorbike": {
+        "bounding_box_color": "#00FF00",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#00FF00",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#00FF00",
+        "connecting_line_thickness": 1
+      },
+      "aeroplane": {
+        "bounding_box_color": "#00FF7F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#00FF7F",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#00FF7F",
+        "connecting_line_thickness": 1
+      },
+      "bus": {
+        "bounding_box_color": "#00FFFF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#00FFFF",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#00FFFF",
+        "connecting_line_thickness": 1
+      },
+      "train": {
+        "bounding_box_color": "#007FFF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#007FFF",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#007FFF",
+        "connecting_line_thickness": 1
+      },
+      "truck": {
+        "detection_percentage": 100,
+        "bounding_box_color": "#0000FF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#0000FF",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#0000FF",
+        "connecting_line_thickness": 1
+      },
+      "boat": {
+        "bounding_box_color": "#7F00FF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#7F00FF",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#7F00FF",
+        "connecting_line_thickness": 1
+      },
+      "traffic light": {
+        "bounding_box_color": "#FF00FF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF00FF",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#FF00FF",
+        "connecting_line_thickness": 1
+      },
+      "fire hydrant": {
+        "bounding_box_color": "#FF007F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF007F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#FF007F",
+        "connecting_line_thickness": 1
+      },
+      "stop sign": {
+        "bounding_box_color": "#7F0000",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#7F0000",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#7F0000",
+        "connecting_line_thickness": 1
+      },
+      "parking meter": {
+        "bounding_box_color": "#7F3F00",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#7F3F00",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#7F3F00",
+        "connecting_line_thickness": 1
+      },
+      "bench": {
+        "bounding_box_color": "#7F7F00",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#7F7F00",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#7F7F00",
+        "connecting_line_thickness": 1
+      },
+      "bird": {
+        "bounding_box_color": "#3F7F00",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#3F7F00",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#3F7F00",
+        "connecting_line_thickness": 1
+      },
+      "cat": {
+        "bounding_box_color": "#007F00",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.6,
+        "label_font_thickness": 2,
+        "label_background_color": "#007F00",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#007F00",
+        "connecting_line_thickness": 2
+      },
+      "dog": {
+        "bounding_box_color": "#007F3F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.6,
+        "label_font_thickness": 2,
+        "label_background_color": "#007F3F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#007F3F",
+        "connecting_line_thickness": 2
+      },
+      "horse": {
+        "bounding_box_color": "#007F7F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#007F7F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#007F7F",
+        "connecting_line_thickness": 1
+      },
+      "sheep": {
+        "bounding_box_color": "#003F7F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#003F7F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#003F7F",
+        "connecting_line_thickness": 1
+      },
+      "cow": {
+        "bounding_box_color": "#00007F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#00007F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#00007F",
+        "connecting_line_thickness": 1
+      },
+      "elephant": {
+        "bounding_box_color": "#3F007F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#3F007F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#3F007F",
+        "connecting_line_thickness": 1
+      },
+      "bear": {
+        "bounding_box_color": "#7F007F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#7F007F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#7F007F",
+        "connecting_line_thickness": 1
+      },
+      "zebra": {
+        "bounding_box_color": "#7F003F",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#7F003F",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#7F003F",
+        "connecting_line_thickness": 1
+      },
+      "giraffe": {
+        "bounding_box_color": "#FF6666",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF6666",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#FF6666",
+        "connecting_line_thickness": 1
+      },
+      "backpack": {
+        "bounding_box_color": "#FFCC66",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FFCC66",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#FFCC66",
+        "connecting_line_thickness": 1
+      },
+      "umbrella": {
+        "bounding_box_color": "#FFFF66",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FFFF66",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#FFFF66",
+        "connecting_line_thickness": 1
+      },
+      "handbag": {
+        "bounding_box_color": "#CCFF66",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#CCFF66",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#CCFF66",
+        "connecting_line_thickness": 1
+      },
+      "tie": {
+        "bounding_box_color": "#66FF66",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#66FF66",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#66FF66",
+        "connecting_line_thickness": 1
+      },
+      "suitcase": {
+        "bounding_box_color": "#66FFCC",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#66FFCC",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#66FFCC",
+        "connecting_line_thickness": 1
+      },
+      "frisbee": {
+        "bounding_box_color": "#66FFFF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#66FFFF",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#66FFFF",
+        "connecting_line_thickness": 1
+      },
+      "skis": {
+        "bounding_box_color": "#66CCFF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#66CCFF",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#66CCFF",
+        "connecting_line_thickness": 1
+      },
+      "snowboard": {
+        "bounding_box_color": "#6699FF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#6699FF",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#6699FF",
+        "connecting_line_thickness": 1
+      },
+      "sports ball": {
+        "bounding_box_color": "#6666FF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#6666FF",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#6666FF",
+        "connecting_line_thickness": 1
+      },
+      "kite": {
+        "bounding_box_color": "#CC66FF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#CC66FF",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#CC66FF",
+        "connecting_line_thickness": 1
+      },
+      "baseball bat": {
+        "bounding_box_color": "#FF66FF",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF66FF",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#FF66FF",
+        "connecting_line_thickness": 1
+      },
+      "baseball glove": {
+        "bounding_box_color": "#FF66CC",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF66CC",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#FF66CC",
+        "connecting_line_thickness": 1
+      },
+      "skateboard": {
+        "bounding_box_color": "#FF6699",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF6699",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#FF6699",
+        "connecting_line_thickness": 1
+      },
+      "surfboard": {
+        "bounding_box_color": "#FF6666",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF6666",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#FF6666",
+        "connecting_line_thickness": 1
+      },
+      "tennis racket": {
+        "bounding_box_color": "#996666",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#996666",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#996666",
+        "connecting_line_thickness": 1
+      },
+      "bottle": {
+        "bounding_box_color": "#996633",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#996633",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#996633",
+        "connecting_line_thickness": 1
+      },
+      "wine glass": {
+        "bounding_box_color": "#999966",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#999966",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#999966",
+        "connecting_line_thickness": 1
+      },
+      "cup": {
+        "bounding_box_color": "#669966",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#669966",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#669966",
+        "connecting_line_thickness": 1
+      },
+      "fork": {
+        "bounding_box_color": "#669999",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#669999",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#669999",
+        "connecting_line_thickness": 1
+      },
+      "knife": {
+        "bounding_box_color": "#666699",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#666699",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#666699",
+        "connecting_line_thickness": 1
+      },
+      "spoon": {
+        "bounding_box_color": "#9966CC",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#9966CC",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#9966CC",
+        "connecting_line_thickness": 1
+      },
+      "bowl": {
+        "bounding_box_color": "#CC66CC",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#CC66CC",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#CC66CC",
+        "connecting_line_thickness": 1
+      },
+      "banana": {
+        "bounding_box_color": "#CC6699",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#CC6699",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#CC6699",
+        "connecting_line_thickness": 1
+      },
+      "apple": {
+        "bounding_box_color": "#CC6666",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#CC6666",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#CC6666",
+        "connecting_line_thickness": 1
+      },
+      "sandwich": {
+        "bounding_box_color": "#CC6633",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#CC6633",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#CC6633",
+        "connecting_line_thickness": 1
+      },
+      "orange": {
+        "bounding_box_color": "#336633",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#336633",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#336633",
+        "connecting_line_thickness": 1
+      },
+      "broccoli": {
+        "bounding_box_color": "#339966",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#339966",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#339966",
+        "connecting_line_thickness": 1
+      },
+      "carrot": {
+        "bounding_box_color": "#339999",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#339999",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#339999",
+        "connecting_line_thickness": 1
+      },
+      "hot dog": {
+        "bounding_box_color": "#336699",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#336699",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#336699",
+        "connecting_line_thickness": 1
+      },
+      "pizza": {
+        "bounding_box_color": "#663399",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#663399",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#663399",
+        "connecting_line_thickness": 1
+      },
+      "donut": {
+        "bounding_box_color": "#993399",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#993399",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#993399",
+        "connecting_line_thickness": 1
+      },
+      "cake": {
+        "bounding_box_color": "#993366",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#993366",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#993366",
+        "connecting_line_thickness": 1
+      },
+      "chair": {
+        "bounding_box_color": "#993333",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#993333",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#993333",
+        "connecting_line_thickness": 1
+      },
+      "sofa": {
+        "bounding_box_color": "#996600",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#996600",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#996600",
+        "connecting_line_thickness": 1
+      },
+      "pottedplant": {
+        "bounding_box_color": "#999900",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#999900",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#999900",
+        "connecting_line_thickness": 1
+      },
+      "bed": {
+        "bounding_box_color": "#669900",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#669900",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#669900",
+        "connecting_line_thickness": 1
+      },
+      "diningtable": {
+        "bounding_box_color": "#339900",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#339900",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#339900",
+        "connecting_line_thickness": 1
+      },
+      "toilet": {
+        "bounding_box_color": "#009900",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#009900",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#009900",
+        "connecting_line_thickness": 1
+      },
+      "tvmonitor": {
+        "bounding_box_color": "#009933",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#009933",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#009933",
+        "connecting_line_thickness": 1
+      },
+      "laptop": {
+        "bounding_box_color": "#009966",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#009966",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#009966",
+        "connecting_line_thickness": 1
+      },
+      "mouse": {
+        "bounding_box_color": "#009999",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#009999",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#009999",
+        "connecting_line_thickness": 1
+      },
+      "remote": {
+        "bounding_box_color": "#006699",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#006699",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#006699",
+        "connecting_line_thickness": 1
+      },
+      "keyboard": {
+        "bounding_box_color": "#003399",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#003399",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#003399",
+        "connecting_line_thickness": 1
+      },
+      "cell phone": {
+        "bounding_box_color": "#000099",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#000099",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#000099",
+        "connecting_line_thickness": 1
+      },
+      "microwave": {
+        "bounding_box_color": "#330099",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#330099",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#330099",
+        "connecting_line_thickness": 1
+      },
+      "oven": {
+        "bounding_box_color": "#660099",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#660099",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#660099",
+        "connecting_line_thickness": 1
+      },
+      "toaster": {
+        "bounding_box_color": "#990099",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#990099",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#990099",
+        "connecting_line_thickness": 1
+      },
+      "sink": {
+        "bounding_box_color": "#990066",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#990066",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#990066",
+        "connecting_line_thickness": 1
+      },
+      "refrigerator": {
+        "bounding_box_color": "#990033",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#990033",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#990033",
+        "connecting_line_thickness": 1
+      },
+      "book": {
+        "bounding_box_color": "#990000",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#990000",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#990000",
+        "connecting_line_thickness": 1
+      },
+      "clock": {
+        "bounding_box_color": "#993300",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#993300",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#993300",
+        "connecting_line_thickness": 1
+      },
+      "vase": {
+        "bounding_box_color": "#996600",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#996600",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#996600",
+        "connecting_line_thickness": 1
+      },
+      "scissors": {
+        "bounding_box_color": "#999900",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#999900",
+        "label_text_color": "#000000",
+        "connecting_line_color": "#999900",
+        "connecting_line_thickness": 1
+      },
+      "teddy bear": {
+        "bounding_box_color": "#669900",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#669900",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#669900",
+        "connecting_line_thickness": 1
+      },
+      "hair drier": {
+        "bounding_box_color": "#339900",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#339900",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#339900",
+        "connecting_line_thickness": 1
+      },
+      "toothbrush": {
+        "bounding_box_color": "#FF5733",
+        "bounding_box_thickness": 2,
+        "label_font_scale": 0.5,
+        "label_font_thickness": 1,
+        "label_background_color": "#FF5733",
+        "label_text_color": "#FFFFFF",
+        "connecting_line_color": "#FF5733",
+        "connecting_line_thickness": 1
+      }
+    },
+    "connecting_lines": {
+      "draw": true,
+      "connecting_lines_percentage": 1
+    }
+  },
+  "output_settings": {
+    "save_output": true,
+    "display_image": false,
+    "display_video": false
+  }
+}
